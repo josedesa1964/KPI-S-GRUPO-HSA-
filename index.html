@@ -4,9 +4,84 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Painel de Metas e Bônus — Grupo HSA</title>
-<link rel="stylesheet" href="../assets/style.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
+  :root {
+    --azul-escuro: #0b2545;
+    --azul: #13315c;
+    --azul-claro: #1e5aa8;
+    --destaque: #ff9f1c;
+    --verde: #2ecc71;
+    --vermelho: #e74c3c;
+    --cinza-bg: #f4f6f9;
+    --cinza-borda: #e1e5eb;
+    --texto: #1c2530;
+    --texto-suave: #6b7688;
+    --branco: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--cinza-bg);
+    color: var(--texto);
+  }
+  header.topbar {
+    background: var(--azul-escuro);
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 32px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+  }
+  .brand .mark {
+    background: var(--destaque);
+    color: var(--azul-escuro);
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+  }
+  .topbar-meta {
+    font-size: 12px;
+    color: #9fb0c9;
+    text-align: right;
+  }
+  main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 28px 32px 60px;
+  }
+  .notice {
+    background: #fff8e6;
+    border: 1px solid #ffe0a3;
+    color: #7a5a00;
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+  footer.footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--texto-suave);
+    font-size: 12px;
+  }
   .mb-header {
     display: flex;
     justify-content: space-between;
